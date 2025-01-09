@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('contactusbg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contactus-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+.getintouch{
+    max-width: 100%;
+    height:auto;
+    color: black;
+    text-align: start;
+    padding: 20px;
+    margin: 0 20px;
+    box-sizing: border-box;
+}
+
+.title, .description{
+    color: white;
+    font-family: poppins;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    width: 400px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    color: #ff8c00;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background: #ff8c00;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #e67e00;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Existing CSS */
+
+/* New Media Queries */
+@media screen and (max-width: 768px) {
+    /* Adjust container width */
+    .contactus-container {
+      width: 80%;
+    }
+  
+    /* Adjust .getintouch content for better flow */
+    .getintouch {
+      text-align: center;
+    }
+  
+    .getintouch .title,
+    .getintouch .description {
+      margin-inline-start: 0; /* Align text to left edge */
+    }
+  
+    /* Reduce form width and adjust layout */
+    .form-container {
+      width: 100%;
+      margin: 0 auto; /* Center form horizontally */
+    }
+  }
+  
+@media screen and (max-width: 480px) {
+    /* Further reduce container width */
+    .contactus-container {
+      width: 90%;
+    }
+  
+    /* Adjust font sizes for better readability */
+    .title,
+    .description,
+    h2 {
+      font-size: 18px;
+    }
+  
+    /* Adjust input and textarea width */
+    input,
+    textarea {
+      font-size: 14px;
+    }
+  }

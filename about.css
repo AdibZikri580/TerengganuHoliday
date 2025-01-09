@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    background-image: url('aboutbg.png');
+    width: 100%;
+    height: 360px;
+}
+
+.title-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 35%;
+    padding: 0px;
+}
+
+
+.title{
+    font-family: Georgia,serif;
+    font-size: 70px;
+    font-weight: bold;
+    color:rgb(1, 1, 195);
+    -webkit-text-stroke: 1px white; /* Tebal border */
+    
+}
+
+.description{
+    font-size: 45px;
+    color: white;
+}
+
+
+.dropdown {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+  
+.dropdown-title {
+    background-color: rgb(0, 0, 139);
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    
+}
+
+.dropdown-title {
+    color: #ffffff;
+}
+  
+.dropdown-content {
+    position: relative;
+    display:none;
+    background-image: url('dropdownmessagebg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+table{
+    width:70%;
+    border-collapse: collapse;
+    margin:20px auto;
+    background-color: white;
+}
+
+.table1 td{
+    border: 5px solid black;
+}
+
+th, td{
+    padding: 10px;
+    text-align: center;
+}
+
+img{
+    width:100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+      font-size: 50px;
+    }
+  
+    .description {
+      font-size: 30px;
+    }
+  
+    .dropdown-title {
+      font-size: 30px;
+      padding: 5px;
+    }
+  
+    .dropdown-content {
+      font-size: 16px;
+    }
+  
+    table {
+      width: 90%;
+    }
+}
+  
+@media screen and (max-width: 480px) {
+    .title {
+      font-size: 40px;
+    }
+  
+    .description {
+      font-size: 20px;
+    }
+  
+    .dropdown-title {
+      font-size: 25px;
+      padding: 3px;
+    }
+  
+    .dropdown-content {
+      font-size: 14px;
+    }
+  
+    table {
+      width: 100%;
+    }
+}  

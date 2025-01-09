@@ -1,0 +1,137 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url('bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    background-image: url('foodandcuisinebg.jpg');
+    width: 100%;
+    height: 480px;
+}
+
+.title-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.title{
+    font-size: 70px;
+    font-weight: bold;
+    color:#4F42B4;
+    -webkit-text-stroke: 1px black; /* Tebal border */
+    text-align: center;
+}
+
+.description{
+    text-align: center;
+    color: white;
+    font-size: 45px;
+}
+
+.container {
+    display: flex;
+    border: 2px solid #ddd;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.menu {
+    background-color: rgb(19, 19, 136);
+    color: white;
+    padding: 20px;
+    width: 20%;
+}
+
+.menu h2 {
+    margin-top: 0;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin: 10px 0;
+    cursor: pointer;
+    color: #ffcc00;
+}
+
+.menu ul li:hover {
+    text-decoration: underline;
+}
+
+.details {
+
+    padding: 20px;
+    width: 80%;
+}
+
+.details img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Adjust header height */
+    header {
+      height: 350px;
+    }
+  
+    /* Adjust title and description sizes */
+    .title {
+      font-size: 50px;
+    }
+  
+    .description {
+      font-size: 30px;
+    }
+  
+    /* Adjust container layout */
+    .container {
+      flex-direction: column;
+    }
+  
+    /* Adjust menu width */
+    .menu {
+      width: 100%;
+    }
+  
+    /* Adjust menu content padding */
+    .menu {
+      padding: 10px;
+    }
+  
+    /* Adjust details width */
+    .details {
+      width: 100%;
+    }
+  }
+  
+@media screen and (max-width: 480px) {
+  
+    /* Further reduce title and description sizes */
+    .title {
+      font-size: 40px;
+    }
+  
+    .description {
+      font-size: 25px;
+    }
+  
+    /* Adjust menu content padding */
+    .menu {
+      padding: 5px;
+    }
+  }

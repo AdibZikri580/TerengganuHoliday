@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='navigation.css'>
+    <script src='navigation.js'></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html" target="_self"><img src="logo.PNG" alt="logo"></a>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div><!--Hambunger button-->
+        <ul id="menu">
+            <li ><a href="index.html">Home</a></li>
+            <li class="active">
+                <a href="about.html">About Terengganu <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown">
+                    <li><a href="about.html" target="_blank">About Terengganu</a></li>
+                     <li><a href="event.html">Festival and Events</a></li>
+                 </ul>
+            </li>
+             <li>
+                <a href="activity.html">Explore Terengganu <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown">
+                    <li><a href="activity.html">Activities</a></li>
+                    <li><a href="attraction.html">Attraction</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="foodandcuisine.html">Food and Travel Tips <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown">
+                    <li><a href="foodandcuisine.html">Food and Cuisine</a></li>
+                    <li><a href="traveltips.html">Travel Tips</a></li>
+                </ul>
+            </li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

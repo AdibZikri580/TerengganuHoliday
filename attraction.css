@@ -1,0 +1,418 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url('bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    background-image: url('attractionbg.jpg');
+    width: 100%;
+    height: 720px;
+}
+
+.title-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 50px;
+    max-width: 75%;
+}
+
+.title{
+    font-size: 70px;
+    font-weight: bold;
+    color:#4F42B4;
+    -webkit-text-stroke: 1px black; /* Tebal border */
+}
+
+.description{
+    color: blue;
+    -webkit-text-stroke: 1px black; /* Tebal border */
+    font-size: 45px;
+}
+
+#attraction-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: white; 
+    box-sizing: border-box;
+}
+
+.attraction{
+    flex: 0 0 20%;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin: 0 20px;
+    box-sizing: border-box;
+}
+
+.attraction img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: solid 1px white;
+    border-radius: 10px 10px 0 0 ;
+}
+
+.attraction h3{
+    font-family: Montserrat;
+    font-size: 30px;
+    margin: 0;
+}
+
+.button{
+    display: inline-flex; /* Flexbox untuk pengatur alignment */
+    width:100px;
+    height: 30px;
+    text-decoration: none;
+    align-items: center; /* Vertical center */
+    justify-content: center; /* Horizontal center */
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#beachandisland-title{
+    background-image: url('beachandislandbg.png');
+    background-size: cover;
+    background-position: center center;
+    border-radius: 40px 0 40px 0;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke: 1px black; /* Tebal border */
+    margin: 20px auto;
+}
+
+.beachandisland-container{
+    background-image: url('beachandislandbg.png');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding:20px;
+    background-color: #5a2abf;
+    box-sizing: border-box;
+}
+
+.beachandisland{
+    flex: 0 0 20%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin: 0 20px;
+    box-sizing: border-box;
+}
+
+.beachandisland img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: solid 1px white;
+    border-radius: 10px 10px 0 0 ;
+}
+
+#herritageandculture-title{
+    background-image: url('herritageandculturebg.png');
+    background-size: cover;
+    background-position: center center;
+    border-radius: 40px 0 40px 0;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke: 1px black; /* Tebal border */
+    margin: 20px auto;
+}
+
+.herritageandculture-container{
+    background-image: url('herritageandculturebg.png');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding:20px;
+    background-color: #5a2abf;
+    box-sizing: border-box;
+}
+
+.herritageandculture{
+    flex: 0 0 20%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin: 0 20px;
+    box-sizing: border-box;
+}
+
+.herritageandculture img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: solid 1px white;
+    border-radius: 10px 10px 0 0 ;
+}
+
+#naturalwonder-title{
+    background-image: url('naturalwonderbg.png');
+    background-size: cover;
+    background-position: center center;
+    border-radius: 40px 0 40px 0;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke: 1px black; /* Tebal border */
+    margin: 20px auto;
+}
+
+.naturalwonder-container{
+    background-image: url('naturalwonderbg.png');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding:20px;
+    background-color: #5a2abf;
+    box-sizing: border-box;
+}
+
+.naturalwonder{
+    flex: 0 0 20%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin: 0 20px;
+    box-sizing: border-box;
+}
+
+.naturalwonder img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: solid 1px white;
+    border-radius: 10px 10px 0 0 ;
+}
+
+#marketandshoppingplaces-title{
+    background-image: url('marketandshoppingplacesbg.png');
+    background-size: cover;
+    background-position: center center;
+    border-radius: 40px 0 40px 0;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke: 1px black; /* Tebal border */
+    margin: 20px auto;
+    text-align: center;
+}
+
+.marketandshoppingplaces-container{
+    background-image: url('marketandshoppingplacesbg.png');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding:20px;
+    background-color: #5a2abf;
+    box-sizing: border-box;
+}
+
+.marketandshoppingplaces{
+    flex: 0 0 20%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin: 0 20px;
+    box-sizing: border-box;
+}
+
+.marketandshoppingplaces img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: solid 1px white;
+    border-radius: 10px 10px 0 0 ;
+}
+
+/* CSS untuk pengguna mudah alih */
+@media (max-width: 768px) {
+    header {
+        height: 400px; /* Kurangkan ketinggian untuk paparan lebih kecil */
+    }
+
+    .title-container {
+        max-width: 90%; /* Lebar penuh untuk skrin kecil */
+        padding: 10px 20px;
+    }
+
+    .title {
+        font-size: 50px; /* Sesuaikan saiz fon untuk skrin kecil */
+    }
+
+    .description {
+        font-size: 30px; /* Sesuaikan saiz fon deskripsi */
+    }
+
+    .content {
+        width: auto; /* Lebar fleksibel */
+        padding: 5px 10px; /* Kurangkan padding */
+        font-size: 14px; /* Saiz fon lebih kecil */
+    }
+
+    #attraction-container, 
+    .beachandisland-container, 
+    .herritageandculture-container, 
+    .naturalwonder-container, 
+    .marketandshoppingplaces-container {
+        flex-direction: column; /* Susunan menegak */
+        gap: 10px;
+    }
+
+    .attraction, 
+    .beachandisland, 
+    .herritageandculture, 
+    .naturalwonder, 
+    .marketandshoppingplaces {
+        flex: 0 0 90%; /* Lebar penuh hampir untuk setiap item */
+        margin: 10px auto; /* Pusatkan item */
+    }
+
+    .attraction img, 
+    .beachandisland img, 
+    .herritageandculture img, 
+    .naturalwonder img, 
+    .marketandshoppingplaces img {
+        height: 150px; /* Kurangkan ketinggian imej */
+    }
+
+    #beachandisland-title, 
+    #herritageandculture-title, 
+    #naturalwonder-title, 
+    #marketandshoppingplaces-title {
+        font-size: 24px; /* Saiz fon lebih kecil */
+        margin: 10px auto;
+    }
+
+    .button {
+        width: auto;
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+}
+
+
+/* CSS untuk Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    header {
+        height: 300px; /* Kurangkan ketinggian header */
+    }
+
+    .title-container {
+        max-width: 100%; /* Lebar penuh */
+        padding: 10px 15px; /* Padding lebih kecil */
+    }
+
+    .title {
+        font-size: 40px; /* Saiz fon yang lebih kecil */
+    }
+
+    .description {
+        font-size: 20px; /* Saiz fon deskripsi lebih kecil */
+    }
+
+    .content {
+        width: auto; /* Lebar fleksibel */
+        padding: 5px 10px; /* Padding yang lebih kecil */
+        font-size: 14px; /* Saiz fon lebih kecil */
+    }
+
+    #attraction-container, 
+    .beachandisland-container, 
+    .herritageandculture-container, 
+    .naturalwonder-container, 
+    .marketandshoppingplaces-container {
+        flex-direction: column; /* Susunan menegak */
+        gap: 10px; /* Jarak antara elemen */
+    }
+
+    .attraction, 
+    .beachandisland, 
+    .herritageandculture, 
+    .naturalwonder, 
+    .marketandshoppingplaces {
+        flex: 0 0 90%; /* Lebar hampir penuh */
+        margin: 10px auto; /* Pusatkan elemen */
+    }
+
+    .attraction img, 
+    .beachandisland img, 
+    .herritageandculture img, 
+    .naturalwonder img, 
+    .marketandshoppingplaces img {
+        height: 150px; /* Kurangkan ketinggian imej */
+    }
+
+    #beachandisland-title, 
+    #herritageandculture-title, 
+    #naturalwonder-title, 
+    #marketandshoppingplaces-title {
+        font-size: 20px; /* Saiz fon lebih kecil */
+        margin: 10px auto; /* Margin atas/bawah */
+    }
+
+    .button {
+        width: auto; /* Lebar fleksibel */
+        padding: 5px 10px; /* Padding lebih kecil */
+        font-size: 14px; /* Saiz fon kecil */
+    }
+}

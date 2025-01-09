@@ -1,0 +1,254 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header{
+    background-image: url('hbackground.jfif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+/*HOMEPAGE SLIDESHOW*/
+/* Container untuk slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden; /* Menyembunyikan gambar yang melebihi kontainer */
+    margin: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.slidefade img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.slidefade{
+    animation:fadeEffect 1s ease-in-out
+}
+
+@keyframes fadeEffect{
+    from{
+        opacity: 0.5;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/*Dots*/
+.dots-container{
+    position: absolute;
+    bottom: 10px;
+    left:50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.dot{
+    height: 15px;
+    width: 15px;
+    margin:0 4px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6 ease;
+    cursor: pointer;
+}
+
+.dot.active{
+    background-color: #006CA5;
+}
+
+/*HOMEPAGE GALLERY*/
+.gallery{
+    background-color:#006CA5;
+    padding: 20px;
+}
+
+.gallery-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+.gallery-container img{
+    height: 100px;
+    width: 100px;
+    border: solid 1px white;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.gallery-container img.zoomed {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2); /* Zoom ke tengah dan besarkan */
+    z-index: 1000; /* Letakkan di atas overlay */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+.zoom-overlay{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);/*Warna latar belakang gelap*/
+    z-index: 999; /*Lettakan di bawah gambar yg dizoom*/
+    display: none;
+    transition: opacity 0.3s ease;
+}
+
+.zoom-overlay.active{
+    display:block;/*tunjuk overlay*/
+    opacity: 1;/*Background transparent*/
+}
+
+h1{
+    text-align: center;
+    color:#006CA5;
+    font-family: Arial,bold;
+    background-color: white;
+}
+
+/*HOMEPAGE TRAVELTIPS*/
+
+.traveltips{
+    margin-left: 30px;
+}
+
+.traveltips p{
+    font-family: Tahoma;
+    font-size: 40pt;
+    border-left: solid 10px #006CA5;
+    padding-left: 30px;
+    margin-top: 30px;
+}
+
+.traveltips button{
+    margin-top: 20px;
+    width: 200px;
+    margin-left: 20px;
+    border: none;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 10px 10px 5px #888888;;
+
+}
+.button1:hover{
+    background-color: #006CA5;
+    color: white;
+}
+
+/*HOMEPAGE EXTRA CONTAINER*/
+.extra-container{
+    background-color: #006CA5;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap : 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px
+}
+
+.askquestion{
+    padding: 10px;
+    width: 45%;
+    color:white;
+}
+
+.video{
+    padding: 10px;
+    width: 45%;
+    
+}
+
+.askquestion p{
+    font-family: Tahoma;
+    font-size: 40pt;
+    margin-bottom: 20px;
+}
+
+form{
+    margin-top: 10px;
+}
+
+input,textarea{
+    width: 90%;
+    height: 30px;
+    margin-bottom: 15px;
+    box-shadow: 1px 1px 5px white;
+    border:none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#ask{
+    height: 100px;
+}
+
+button{
+    width: 30%;
+    height: 40px;
+    background-color: white;
+    color: #006CA5;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: 0.4s;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px white;
+}
+
+button:hover{
+    background-color: #006CA5;
+    color: white;
+}
+
+
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+
+    .gallery-container img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .traveltips p {
+        font-size: 30px;
+    }
+
+    .traveltips button {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .extra-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .askquestion, .map {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .askquestion form button{
+        width: 40%;
+    }
+
+}
